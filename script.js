@@ -12,7 +12,7 @@ window.onload = function() {
 	  navigator.getUserMedia(
 	    // Constraints
 	    {
-	      video: true
+	      video: { facingMode: "user" }
 	    },
 
 	    // Success Callback
