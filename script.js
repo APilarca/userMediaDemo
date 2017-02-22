@@ -9,10 +9,13 @@ window.onload = function() {
 	// If it doesn't show an alert, otherwise continue.
 	if (navigator.getUserMedia) {
 	  // Request the camera.
+	  var front = false;
+		document.getElementById('flip-button').onclick = function() { front = !front; };
 	  navigator.getUserMedia(
+
 	    // Constraints
 	    {
-	      video: { facingMode: "user" }
+	      video: { facingMode: (front? "user" : "environment") }
 	    },
 
 	    // Success Callback
