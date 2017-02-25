@@ -15,7 +15,7 @@ window.onload = function() {
 
 	    // Constraints
 	    {
-	      video: { facingMode: (front? "user" : "environment") }
+	      video: { facingMode: "environment" }
 	    },
 
 	    // Success Callback
@@ -39,3 +39,4 @@ window.onload = function() {
 	  alert('Sorry, your browser does not support getUserMedia');
 	}
 }
+//  (front? "user" : "environment")
